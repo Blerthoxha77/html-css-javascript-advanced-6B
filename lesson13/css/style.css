@@ -1,0 +1,21 @@
+ul{
+/*list-style-type: circle;*/
+list-style-type: square;
+
+}
+
+ul{
+   /* list-style-image:url("../img/icon.png") ;/*
+
+
+}
+ol{
+    /*list-style-image: lower roman;*/
+}
+
+ul{
+    list-style-type:circle;
+    padding: 0;
+    border:2px solid black;
+    
+}
