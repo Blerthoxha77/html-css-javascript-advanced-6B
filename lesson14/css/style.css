@@ -1,0 +1,39 @@
+article p{
+
+    background: blue;
+    padding:20px;
+    color: rgb(255, 255, 255);
+}
+
+article > p{
+    background: red;
+
+
+
+
+}
+
+article ~ p{
+background: purple;
+
+
+
+}
+
+article+p{
+
+    background-color: orange;
+}
+
+input:out-of-range{
+
+    border: 10px solid red;
+}
+
+span:first-of-type{
+
+    background: black;
+    color:aqua;
+    padding: 10px;
+    
+}
