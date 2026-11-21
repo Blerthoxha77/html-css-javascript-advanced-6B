@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+    <h1>CarZone</h1>
+    <p>Your Dream Car Starts Here</p>
+</header>
+
+<section class="hero">
+    <h2>ORDER YOUR <span>DREAM CAR</span></h2>
+    <p>Complete the form below and take the first step towards your new car.</p>
+</section>
+
+<div class="container">
+
+    <h3>Customer Information</h3>
+
+    <form id="orderForm">
+
+        <div class="form-grid">
+
+            <div class="form-group">
+                <label>First Name</label>
+                <input type="text" placeholder="Enter your first name" required>
+            </div>
+
+            <div class="form-group">
+                <label>Last Name</label>
+                <input type="text" placeholder="Enter your last name" required>
+            </div>
+
+            <div class="form-group">
+                <label>Email Address</label>
+                <input type="email" placeholder="example@gmail.com" required>
+            </div>
+
+            <div class="form-group">
+                <label>Phone Number</label>
+                <input type="tel" placeholder="+383 4X XXX XXX"
+                pattern="[0-9+ ]{7,20}" required>
+            </div>
+
+            <div class="form-group">
+                <label>City</label>
+                <input type="text" placeholder="Enter your city" required>
+            </div>
+
+            <div class="form-group">
+                <label>Address</label>
+                <input type="text" placeholder="Enter your address" required>
+            </div>
+
+            <div class="form-group full">
+                <label>Select Your Dream Car</label>
+                <select required>
+                    <option value="">Choose your car</option>
+                    <option>Mercedes-Benz C-Class</option>
+                    <option>BMW 5 Series</option>
+                    <option>Audi A6</option>
+                    <option>Porsche 911</option>
+                    <option>Ferrari Roma</option>
+                    <option>Range Rover Sport</option>
+                </select>
+            </div>
+
+            <div class="form-group full">
+                <label>Additional Information</label>
+                <textarea placeholder="Write any additional information here..."></textarea>
+            </div>
+
+        </div>
+
+        <div class="confirm">
+            <input type="checkbox" id="agree" required>
+            <label for="agree">
+                I confirm that the information provided is correct.
+            </label>
+        </div>
+
+        <button type="submit">CONFIRM YOUR ORDER</button>
+
+        <p id="message"></p>
+
+    </form>
+</div>
+
+
+    
+</body>
+</html>
