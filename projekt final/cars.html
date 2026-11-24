@@ -3,63 +3,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CarZone-Cars</title>
+    <meta name="description" content="Browse the premium CarZone vehicle collection.">
+    <title>Available Cars | CarZone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-
-
-  
 </head>
-<body>
-    <h1>Available Cars</h1>
+<body class="cars-page">
+    <header class="site-header">
+        <a class="brand" href="index.html" aria-label="CarZone home">
+            <span class="brand-mark">CZ</span>
+            <span>CARZONE</span>
+        </a>
 
-    <div class="cars">
+        <nav class="main-nav" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a class="active" href="cars.html">Cars</a>
+            <a href="buy.html">Buy</a>
+        </nav>
 
-        <div class="car">
-            <img src="https://www.topgear.com/sites/default/files/2021/11/Mercedes_C300D_0000.jpg" alt="Mercedes">
-            <h2>Mercedes-Benz C-Class</h2>
-            <p class="price">€25,000</p>
-        </div>
+        <a class="phone-link" href="tel:+38345718239">
+            <span class="phone-icon" aria-hidden="true">☎</span>
+            <span>+383 45 718 239</span>
+        </a>
+    </header>
 
-        <div class="car">
-            <img src="https://www.topgear.com/sites/default/files/2023/05/P90505059_highRes.jpg" alt="BMW">
-            <h2>BMW 5 Series</h2>
-            <p class="price">€30,000</p>
-           
-        </div>
+    <main>
+        <section class="cars-heading">
+            <div>
+                <p class="eyebrow dark">AVAILABLE VEHICLES</p>
+                <h1>Find your next drive.</h1>
+            </div>
+            <p>Explore a curated collection of executive, sports, and luxury vehicles.</p>
+        </section>
 
-        <div class="car">
-            <img src="https://tse2.mm.bing.net/th/id/OIP.f1Z4V64XcGc_XBYhS_KB5QHaEf?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Audi">
-            <h2>Audi A6</h2>
-            <p class="price">€28,000</p>
-            
-        </div>
+        <section class="car-catalog" aria-label="Available cars">
+            <article class="catalog-card">
+                <div class="catalog-image">
+                    <img src="https://www.topgear.com/sites/default/files/2021/11/Mercedes_C300D_0000.jpg" alt="Mercedes-Benz C-Class">
+                    <span>Executive</span>
+                </div>
+                <div class="catalog-info">
+                    <div>
+                        <p>Mercedes-Benz</p>
+                        <h2>C-Class</h2>
+                    </div>
+                    <strong>€25,000</strong>
+                </div>
+                <a href="buy.html">Request vehicle <span>→</span></a>
+            </article>
 
-        <div class="car">
-            <img src="https://newsroom.porsche.com/.imaging/mte/porsche-templating-theme/image_1290x726/dam/pnr/2024/Products/992-II/0840_nevada_coupe_u-crane_AKOS0607_edit_V03-sky.jpg/jcr:content/0840_nevada_coupe_u-crane_AKOS0607_edit_V03-sky.jpg" alt="Porsche">
-            <h2>Porsche 911</h2>
-            <p class="price">€85,000</p>
-            
-        </div>
+            <article class="catalog-card">
+                <div class="catalog-image">
+                    <img src="https://www.topgear.com/sites/default/files/2023/05/P90505059_highRes.jpg" alt="BMW 5 Series">
+                    <span>Luxury sedan</span>
+                </div>
+                <div class="catalog-info">
+                    <div>
+                        <p>BMW</p>
+                        <h2>5 Series</h2>
+                    </div>
+                    <strong>€30,000</strong>
+                </div>
+                <a href="buy.html">Request vehicle <span>→</span></a>
+            </article>
 
-        <div class="car">
-            <img src="https://www.topgear.com/sites/default/files/cars-car/carousel/2020/08/_p2a2965.jpg" alt="Ferrari">
-            <h2>Ferrari Roma</h2>
-            <p class="price">€120,000</p>
-            
-        </div>
+            <article class="catalog-card">
+                <div class="catalog-image">
+                    <img src="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?auto=format&fit=crop&w=900&q=85" alt="Audi A6">
+                    <span>Premium</span>
+                </div>
+                <div class="catalog-info">
+                    <div>
+                        <p>Audi</p>
+                        <h2>A6</h2>
+                    </div>
+                    <strong>€28,000</strong>
+                </div>
+                <a href="buy.html">Request vehicle <span>→</span></a>
+            </article>
 
-        <div class="car">
-            <img src="https://tse3.mm.bing.net/th/id/OIP.QWR1my6AbgPKIJeSbHJeiAHaEF?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Range Rover">
-            <h2>Range Rover Sport</h2>
-            <p class="price">€65,000</p>
-           
-        </div>
+            <article class="catalog-card">
+                <div class="catalog-image">
+                    <img src="https://newsroom.porsche.com/.imaging/mte/porsche-templating-theme/image_1290x726/dam/pnr/2024/Products/992-II/0840_nevada_coupe_u-crane_AKOS0607_edit_V03-sky.jpg/jcr:content/0840_nevada_coupe_u-crane_AKOS0607_edit_V03-sky.jpg" alt="Porsche 911">
+                    <span>Sport</span>
+                </div>
+                <div class="catalog-info">
+                    <div>
+                        <p>Porsche</p>
+                        <h2>911 Carrera</h2>
+                    </div>
+                    <strong>€85,000</strong>
+                </div>
+                <a href="buy.html">Request vehicle <span>→</span></a>
+            </article>
 
-    </div>
+            <article class="catalog-card">
+                <div class="catalog-image">
+                    <img src="https://www.topgear.com/sites/default/files/cars-car/carousel/2020/08/_p2a2965.jpg" alt="Ferrari Roma">
+                    <span>Supercar</span>
+                </div>
+                <div class="catalog-info">
+                    <div>
+                        <p>Ferrari</p>
+                        <h2>Roma</h2>
+                    </div>
+                    <strong>€120,000</strong>
+                </div>
+                <a href="buy.html">Request vehicle <span>→</span></a>
+            </article>
 
-   
+            <article class="catalog-card">
+                <div class="catalog-image">
+                    <img src="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?auto=format&fit=crop&w=900&q=85" alt="Range Rover Sport">
+                    <span>Luxury SUV</span>
+                </div>
+                <div class="catalog-info">
+                    <div>
+                        <p>Range Rover</p>
+                        <h2>Sport</h2>
+                    </div>
+                    <strong>€65,000</strong>
+                </div>
+                <a href="buy.html">Request vehicle <span>→</span></a>
+            </article>
+        </section>
+    </main>
 
-
-    
+    <footer class="site-footer">
+        <a class="brand footer-brand" href="index.html">
+            <span class="brand-mark">CZ</span>
+            <span>CARZONE</span>
+        </a>
+        <p>Premium vehicles. Personal service.</p>
+        <p>© 2026 CarZone</p>
+    </footer>
 </body>
 </html>

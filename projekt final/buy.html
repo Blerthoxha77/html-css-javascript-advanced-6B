@@ -3,94 +3,195 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Reserve your next luxury car with CarZone.">
+    <title>Buy a Car | CarZone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <header>
-    <h1>CarZone</h1>
-    <p>Your Dream Car Starts Here</p>
-</header>
+<body class="buy-page">
+    <header class="site-header">
+        <a class="brand" href="index.html" aria-label="CarZone home">
+            <span class="brand-mark">CZ</span>
+            <span>CARZONE</span>
+        </a>
 
-<section class="hero">
-    <h2>ORDER YOUR <span>DREAM CAR</span></h2>
-    <p>Complete the form below and take the first step towards your new car.</p>
-</section>
+        <nav class="main-nav" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="cars.html">Cars</a>
+            <a class="active" href="buy.html">Buy</a>
+        </nav>
 
-<div class="container">
+        <a class="phone-link" href="tel:+38345718239">
+            <span class="phone-icon" aria-hidden="true">☎</span>
+            <span>+383 45 718 239</span>
+        </a>
+    </header>
 
-    <h3>Customer Information</h3>
-
-    <form id="orderForm">
-
-        <div class="form-grid">
-
-            <div class="form-group">
-                <label>First Name</label>
-                <input type="text" placeholder="Enter your first name" required>
+    <main>
+        <section class="buy-hero">
+            <div class="hero-copy">
+                <p class="eyebrow">EXCLUSIVE VEHICLES · SIMPLE PROCESS</p>
+                <h1>Reserve your<br><span>dream car.</span></h1>
+                <p class="hero-description">Tell us what you are looking for and our team will prepare a personal offer for you.</p>
+                <div class="trust-row">
+                    <div>
+                        <strong>150+</strong>
+                        <span>Premium vehicles</span>
+                    </div>
+                    <div>
+                        <strong>4.9/5</strong>
+                        <span>Customer rating</span>
+                    </div>
+                    <div>
+                        <strong>24h</strong>
+                        <span>Response time</span>
+                    </div>
+                </div>
             </div>
 
-            <div class="form-group">
-                <label>Last Name</label>
-                <input type="text" placeholder="Enter your last name" required>
+            <aside class="featured-card" aria-label="Featured vehicle">
+                <div class="featured-image">
+                    <img src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=900&q=85" alt="Luxury sports car">
+                    <span class="featured-tag">Featured</span>
+                </div>
+                <div class="featured-details">
+                    <div>
+                        <p>Mercedes-Benz</p>
+                        <h2>AMG GT 63</h2>
+                    </div>
+                    <strong>€145,000</strong>
+                </div>
+            </aside>
+        </section>
+
+        <section class="order-section" aria-labelledby="order-title">
+            <div class="form-panel">
+                <div class="section-heading">
+                    <p class="step">01</p>
+                    <div>
+                        <p class="eyebrow dark">REQUEST DETAILS</p>
+                        <h2 id="order-title">Your information</h2>
+                    </div>
+                </div>
+
+                <form id="orderForm" class="order-form">
+                    <div class="field-grid">
+                        <label>
+                            <span>First name</span>
+                            <input type="text" name="firstName" placeholder="John" required>
+                        </label>
+                        <label>
+                            <span>Last name</span>
+                            <input type="text" name="lastName" placeholder="Smith" required>
+                        </label>
+                        <label>
+                            <span>Email address</span>
+                            <input type="email" name="email" placeholder="john@example.com" required>
+                        </label>
+                        <label>
+                            <span>Phone number</span>
+                            <input type="tel" name="phone" placeholder="+383 45 718 239" pattern="[0-9+ ()-]{7,20}" required>
+                        </label>
+                        <label>
+                            <span>City</span>
+                            <input type="text" name="city" placeholder="Prishtina" required>
+                        </label>
+                        <label>
+                            <span>Preferred model</span>
+                            <select name="car" id="carSelect" required>
+                                <option value="" selected disabled>Select a vehicle</option>
+                                <option value="Mercedes-Benz C-Class">Mercedes-Benz C-Class</option>
+                                <option value="BMW 5 Series">BMW 5 Series</option>
+                                <option value="Audi A6">Audi A6</option>
+                                <option value="Porsche 911">Porsche 911</option>
+                                <option value="Ferrari Roma">Ferrari Roma</option>
+                                <option value="Range Rover Sport">Range Rover Sport</option>
+                            </select>
+                        </label>
+                    </div>
+
+                    <label class="message-field">
+                        <span>Additional information <small>Optional</small></span>
+                        <textarea name="message" rows="4" placeholder="Tell us about your preferred color, mileage, or delivery location..."></textarea>
+                    </label>
+
+                    <label class="consent">
+                        <input type="checkbox" required>
+                        <span>I agree to be contacted by CarZone regarding this request.</span>
+                    </label>
+
+                    <button type="submit" class="submit-button">
+                        <span>Request this car</span>
+                        <span class="button-arrow" aria-hidden="true">→</span>
+                    </button>
+                    <p class="form-status" id="formStatus" role="status"></p>
+                </form>
             </div>
 
-            <div class="form-group">
-                <label>Email Address</label>
-                <input type="email" placeholder="example@gmail.com" required>
-            </div>
+            <aside class="process-panel">
+                <div class="process-intro">
+                    <p class="eyebrow">HOW IT WORKS</p>
+                    <h2>From request<br>to the road.</h2>
+                </div>
 
-            <div class="form-group">
-                <label>Phone Number</label>
-                <input type="tel" placeholder="+383 4X XXX XXX"
-                pattern="[0-9+ ]{7,20}" required>
-            </div>
+                <ol class="process-list">
+                    <li>
+                        <span>01</span>
+                        <div>
+                            <h3>Send a request</h3>
+                            <p>Choose the model and share your details.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span>02</span>
+                        <div>
+                            <h3>Get a personal offer</h3>
+                            <p>Our specialist prepares the best available option.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span>03</span>
+                        <div>
+                            <h3>Arrange delivery</h3>
+                            <p>Confirm the details and collect your new car.</p>
+                        </div>
+                    </li>
+                </ol>
 
-            <div class="form-group">
-                <label>City</label>
-                <input type="text" placeholder="Enter your city" required>
-            </div>
+                <div class="support-card">
+                    <div class="support-avatar">CZ</div>
+                    <div>
+                        <p>Need help choosing?</p>
+                        <a href="tel:+38345718239">Speak with a specialist</a>
+                    </div>
+                </div>
+            </aside>
+        </section>
+    </main>
 
-            <div class="form-group">
-                <label>Address</label>
-                <input type="text" placeholder="Enter your address" required>
-            </div>
+    <footer class="site-footer">
+        <a class="brand footer-brand" href="index.html">
+            <span class="brand-mark">CZ</span>
+            <span>CARZONE</span>
+        </a>
+        <p>Premium vehicles. Personal service.</p>
+        <p>© 2026 CarZone</p>
+    </footer>
 
-            <div class="form-group full">
-                <label>Select Your Dream Car</label>
-                <select required>
-                    <option value="">Choose your car</option>
-                    <option>Mercedes-Benz C-Class</option>
-                    <option>BMW 5 Series</option>
-                    <option>Audi A6</option>
-                    <option>Porsche 911</option>
-                    <option>Ferrari Roma</option>
-                    <option>Range Rover Sport</option>
-                </select>
-            </div>
+    <script>
+        const form = document.getElementById('orderForm');
+        const status = document.getElementById('formStatus');
 
-            <div class="form-group full">
-                <label>Additional Information</label>
-                <textarea placeholder="Write any additional information here..."></textarea>
-            </div>
-
-        </div>
-
-        <div class="confirm">
-            <input type="checkbox" id="agree" required>
-            <label for="agree">
-                I confirm that the information provided is correct.
-            </label>
-        </div>
-
-        <button type="submit">CONFIRM YOUR ORDER</button>
-
-        <p id="message"></p>
-
-    </form>
-</div>
-
-
-    
+        form.addEventListener('submit', function (event) {
+            event.preventDefault();
+            const firstName = form.elements.firstName.value.trim();
+            const car = form.elements.car.value;
+            status.textContent = `Thank you, ${firstName}. Your request for the ${car} has been received.`;
+            status.classList.add('visible');
+            form.reset();
+        });
+    </script>
 </body>
 </html>
